@@ -1,0 +1,50 @@
+.welcome {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large
+}
+
+
+.tournament {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+}
+
+.tournament_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.rounds {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.rounds li {
+  margin-right: 10px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chess Tool</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 align="center">Главная</h1>
+            <div class="welcome">
+                <article>
+                   <p>Добро пожаловать на сайт для организации шахматных турниров. Это главная страница, на ней будут отображаться все ваши турниры.
+                    Жеребьёвка проводится с помошью швейцарской системы.
+                   </p>
+                </article>
+            </div>
+        </header>
+        <br><br>
+        <main>
+            <ul class="tournament_list">
+            <%tournaments.map( tournament => {%> 
+                <li>
+                    <div class="tournament">
+                        <div>
+                            <a href="tournament/<%= tournament.id %>"><%= tournament.name %></a>
+                        </div>
+                    </div>
+                </li>
+            <%})%>
+            </ul>
+            <br>
+            <button onclick="location.href = '/new_tournament'">Создать турнир</button>
+        </main>
+    </body>
+</html>

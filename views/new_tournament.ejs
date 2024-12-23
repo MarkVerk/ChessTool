@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать турнир</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Назад</a>
+    </nav>
+    <header>
+        <h1 align="center">Новый турнир</h1>
+        <p>Выберите название турнира и добавьте игроков. Их рейтинг не должен быть ниже 1000 и выше 3300.</p>
+    </header>
+    <br><br>
+    <main>
+        <label for="tournament_name">Название турнира</label>
+        <input type="text" id="tournament_name">
+        <br>
+        <br>
+        <label for="tournament_description">Описание (Опционально)</label>
+        <br>
+        <textarea id="tournament_description"></textarea>
+        <br>
+        <button onclick="finish()">Готово</button>
+    </main>
+    <script>
+        function finish() {
+            const name = document.getElementById('tournament_name');
+            const description = document.getElementById('tournament_description');
+            
+        }
+    </script>
+</body>
+</html>
